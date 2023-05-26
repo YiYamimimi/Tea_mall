@@ -1,0 +1,42 @@
+<view class="wraper">
+  <navigator class="classify-head"url="/pages/search/search">
+    <view class="classify-search" bindtap="skipSearch">
+      <view class="sou-con price">请输入想要搜索的商品</view>
+    </view>
+  </navigator>
+
+  <!-- 左侧导航 -->
+  <view class='tui-fixed-left'>
+  <image class="shangcha" mode="widthFix" src="https://pic1.imgdb.cn/item/6359f02916f2c2beb165e19e.jpg"></image>
+    <scroll-view class='tui-city-scroll' scroll-x="true" scroll-y="true" style='height:92%;' scroll-with-animation="true"
+      scroll-top="{{leftMenuTop}}">
+      <text class="menu-item {{index === currentActiveIndex ? 'menu-active' : ''}}" wx:for="{{navList}}" wx:key="unique"
+        data-index="{{index}}" id='{{index}}' catchtap='changeMenu'>{{item.c_name}}</text>
+    </scroll-view>
+  </view>
+
+  <!-- 右侧滚动商品 -->
+  <view class='content wraper'>
+    <view style="height:5%;"></view>
+    <scroll-view class='tui-city-scroll-y' scroll-y="true"  scroll-with-animation="true"
+      scroll-top="{{rightProTop}}" bindscroll="scroll">
+      <view class='pro-item'wx:for="{{navList}}" wx:key="unique">
+      
+        <view class='tui-list-head' id='NAV{{index}}'>{{item.c_name}}</view>
+        
+        <view class='tui-list-li'>
+          <navigator class='goods-box' 
+          wx:for-item='items' 
+          wx:for="{{item.list}}" 
+          url="/pages/goods_list/goods_list?id={{items.id}}&url={{items.url}}&goodsName={{items.goodsName}}&money={{items.money}}"
+          wx:key="unique">
+            <image class='goodsImg' src='{{items.url}}'></image>
+            <view class='goodsName'>{{items.goodsName}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+

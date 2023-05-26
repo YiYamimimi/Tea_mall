@@ -1,0 +1,218 @@
+@import "../../utils/stylesheet.wxss"; 
+/* 顶部导航栏 */
+.naviga{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 100rpx;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* 首页顶部轮播图 */
+.first{
+  display:block;
+}
+.bigImage{
+  width: 100%;
+}
+
+/* 首页图标图片 茶叶产地、关于我们*/
+.IconImage1{
+  width: 160rpx;
+  margin-top: 70rpx;
+}
+/* 韶关红山镇、茶叶介绍 */
+.IconImage2{
+  width: 280rpx;
+  display:block;
+}
+/* 茶文化 */
+.IconImage3{
+  width: 230rpx;
+}
+
+/* 好茶促销 */
+.IconImage4{
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+/* 首页介绍 */
+.introduce{
+  width: 100%;
+}
+
+/* 茶叶产地、关于我们 图标排放 */
+.home_icon1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  margin-top: 0rpx;
+  margin-bottom: 0rpx;
+}
+/* 居中文本 */
+.home_icon2{
+  display: flex;
+  flex-direction: column;
+  /* 水平居中 */
+  justify-content: space-around;
+  /* 横向居中 */
+  align-items: center;
+  margin: 50rpx;
+}
+
+/* 首页分割线 */
+.home_split{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 茶叶产地&关于我们中间分割线 */
+.smallSplit{
+  margin-top: 30rpx;
+  width: 40rpx;
+  height: 220rpx;
+}
+
+/* 图片文字 */
+.textImage{
+  margin-top: 70rpx;
+  width: 100%;
+}
+.textImage2{
+  margin-top: 30rpx;
+  width: 90%;
+}
+.textImage3{
+  margin-top: 15%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  width: 75%;
+}
+
+/* 字体排版 */
+.introduceText1{
+  /* 左对齐？？？ */
+  width: 100%;
+  /* 子元素居中对齐实现：父元素text-align:center + 子元素display: inline-block */
+  text-align:left;
+  margin-left: 100rpx;
+}
+
+/* 文本：——— 唐•司空图《二十四诗品》 */
+.introduceText3{
+  /* 子元素居中对齐实现：父元素text-align:center + 子元素display: inline-block */
+  text-align:right;
+  justify-content: right;
+  margin-right: 0rpx;
+  /* 靠右显示 */
+  float: inline-end;
+  margin-left: 200rpx;
+}
+/* 文本：/源于自然，归于本真/ */
+.text_right{
+  align-items: flex-end;
+  display: flex;
+  width: 50%;
+  margin-left: 50%;
+  margin-top: 15rpx;
+  float: inline-end;
+}
+.introduceText2{
+  text-align:right;
+  justify-content: right;
+  margin-right: 0rpx;
+  padding-right: 0rpx;
+  margin-left: 16%;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  line-height: 55rpx;
+  color: #333;
+  font-weight: 300;
+}
+
+/* 文本：茶叶介绍下居中文本 */
+.introduceText4{
+  justify-content: center;
+  text-align: center;
+}
+
+/* 文本：为一杯茶/感寻深处/ */
+.introduceText5{
+  justify-content: left;
+  padding: 10rpx;
+  line-height: 55rpx;
+  font-size: 30rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+  font-weight: 300;
+}
+
+/* 四种思源宋体字体 */
+.mydiv1 {
+  font-family: myfont_Light;
+  font-size:16px;
+  font-style:normal;
+}
+.mydiv2 {
+  font-family: myfont_Heavy;
+  display: inline-block;
+}
+.mydiv3 {
+  font-family: myfont_Regular;
+  display: inline-block;
+}
+.mydiv4 {
+  font-family: myfont_Bold;
+  display: inline-block;
+}
+
+/* 不要间距的首页的图片 */
+.midiumImage{
+  /*取消图片间间距： 将图片转换为块级对象 */
+  display:block;
+
+  width: 100%;
+  margin: 0rpx;
+  padding: 0rpx;
+}
+
+/* 绿色图片enjoyTea */
+.midiumImage1{
+  width: 200rpx;
+  
+  /* 靠右显示 */
+  /* float: inline-end; */
+  margin-right: 0rpx;
+  margin-left: 70%;
+}
+
+/* 茶叶介绍下的图片 */
+.midiumImage2{
+  width: 100%;
+  /* 保持图片与文本的间距 */
+  margin-top: 20rpx;
+}
+
+/* 茶文化“我们探索红山” */
+.midiumImage3{
+  width: 100%;
+  /* 保持图片与文本的间距 */
+  margin-top: 30%;
+  margin-bottom: 15%;
+}
+
+/* 到底部的空白 */
+.Tobottom{
+  width: 100%;
+  /* 保持图片与文本的间距 */
+  margin-top: 20rpx;
+  margin-bottom: 30%;
+  background-color: #efefefef;
+}

@@ -1,0 +1,100 @@
+.wraper{
+  /* 让内容滚动，且不会被结算栏挡住 */
+ display: flex;
+ flex-direction: column;
+}
+
+.title{
+ font-size: 35rpx;
+ margin-top: 20rpx;
+ margin-left: 15rpx;
+}
+.border{
+ border: 2rpx solid rgb(223, 219, 219);
+
+}
+
+.goods{
+    display: flex;
+    width: 100%;
+    margin-top: 30rpx;
+    padding: 10rpx;
+    margin-bottom: 100rpx;
+    border-bottom: 1rpx solid lightgray;
+}
+.goods image{
+ width: 30%;
+ height: 200rpx;
+}
+.goods .context{
+ margin-left: 10rpx;
+ width: 450rpx;
+ height: 220rpx;
+ overflow:hidden;
+}
+.goods .context .price{
+ color: var(--themeColor);
+ font-size: 40rpx;
+ margin-top: 70rpx;
+}
+.goods .context .btn{
+ color: black;
+ position: relative;
+ text-align: center;
+ left: 27%;
+ bottom: 60rpx;
+}
+.goods .context .btn text{
+ position: relative;
+ bottom: 15rpx;
+}
+.page_over{
+ display: flex;
+ position: fixed;
+ bottom:0px;
+ width: 100%;
+ margin-bottom: 0rpx;
+ background-color: white;
+ /* border-top: 1rpx solid #BAD296; */
+}
+.page_over .sum{
+ margin-left: 40%;
+ width: 220rpx;
+ font-size: 30rpx;
+}
+.page_over .sum .money{
+ color: #666666;
+ margin-left: 70rpx;
+ width: 100rpx;
+ font-size: 25rpx;
+}
+.page_over .go{
+ background-color: var(--themeColor);
+ text-align: center;
+ padding-top: 20rpx;
+ width:200rpx;
+ height: 80rpx;
+}
+.page_over .sum text{
+ color: red;
+}
+
+.add-cart-btn {
+ background: linear-gradient(to right, #BAD296, rgb(121, 160, 121));
+ color: #fff;
+ /* border-radius: 50px; */
+ padding: 3rpx;
+ text-align: center;
+ line-height: 100rpx;
+ width: 20rpx;
+ height: 90rpx;
+}
+.emptyImage{
+  margin-top: 10%;
+  width: 1050rpx;
+}
+
+/* 设置页面背景颜色 */
+page{
+ background-color:rgb(246, 246, 246);
+}

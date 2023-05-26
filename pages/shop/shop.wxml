@@ -1,0 +1,39 @@
+<view class="wraper">
+    <view class="title"></view>
+
+    <checkbox-group bindchange="handleCheck">
+        <view class="goods" wx:if="{{cartsList.length!=0}}" wx:for="{{cartsList}}">
+            <checkbox value="{{item.id}}" checked="{{istate}}"></checkbox>
+            <image class="border" src="{{item.url}}"></image>
+            <navigator url="/pages/goods_list/goods_list?id={{item.id}}&url={{item.url}}&goodsName={{item.goodsName}}&money={{item.money}}">
+                <view class="context">{{item.goodsName}}
+                    <view class="price">
+                        ￥{{item.money}}
+                        <view class="btn">
+                            <button size="mini" catchtap="removenum" data-index="{{index}}" data-money="{{item.num}}">-</button>
+                            <text>{{shu[index]}}</text>
+                            <button size="mini" catchtap="addnum" data-index="{{index}}" data-money="{{item.num}}">+</button>
+                        </view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class="emptyImage" wx:if="{{cartsList.length==0}}">  
+            <image style="width: 70%;" mode="widthFix" src="http://img.mp.itc.cn/upload/20170401/2f523043409747a9b68c1bcf6fd353a5_th.jpeg" />
+        </view>
+
+    </checkbox-group>
+
+    <view class="page_over">
+        <view class="checkbox">
+            <checkbox-group style="width: 1rpx;" bindchange="checkboxChange">
+                <checkbox value="all">全选</checkbox>
+            </checkbox-group>
+        </view>
+        <view class="sum">合计:<text>￥{{sum}}</text>
+            <view class="money">包含运费</view>
+        </view>
+
+        <button class="add-cart-btn" bindtap='over'>结算({{num}})</button>
+    </view>
+</view>

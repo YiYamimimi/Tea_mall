@@ -1,0 +1,5 @@
+/* 顶部图片 */
+.bigImage{
+  height: 400rpx;
+  width: 100%;
+}

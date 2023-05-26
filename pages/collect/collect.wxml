@@ -1,0 +1,2 @@
+<tab tabList="{{tabList}}" curr="{{curr}}" GoodsList="{{GoodsList}}" bind:tapwhere="_where"></tab>
+

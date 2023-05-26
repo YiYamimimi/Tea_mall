@@ -1,0 +1,17 @@
+@import './style/iconfont.wxss';
+
+page,view,text,swiper,swiper-item,image,navigator{
+    /* padding:0; */
+    margin:0;
+    /* padding: 5rpx; */
+    box-sizing: border-box;
+}
+/* 设置页面背景颜色 */
+page{
+  background-color:#efefefef;
+  font-size: 37rpx;
+}
+
+image{
+    width: 100%;
+}

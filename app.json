@@ -1,0 +1,64 @@
+
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/goods_list/goods_list",
+    "pages/shop/shop",
+    "pages/collect/collect",
+    "pages/order/order",
+    "pages/me/me",
+    "pages/feedback/feedback",
+    "pages/login/login",
+    "pages/auth/auth",
+    "pages/pay/pay",
+    "pages/address/address",
+    "pages/addressList/addressList",
+    "pages/logs/logs",
+    "pages/introduceTea/introduceTea",
+    "pages/productFrom/productFrom",
+    "pages/ShaoGuan/ShaoGuan",
+    "pages/aboutus/aboutus",
+    "pages/separate/separate"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FDFBEF",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#efefefef",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/statics/icon/home.png",
+      "selectedIconPath": "/statics/icon/home-active.png"
+    },
+    {
+      "pagePath": "pages/separate/separate",
+      "text": "分类",
+      "iconPath": "/statics/icon/cate.png",
+      "selectedIconPath": "/statics/icon/cate-active.png"
+    },
+    {
+      "pagePath": "pages/shop/shop",
+      "text": "购物车",
+      "iconPath": "/statics/icon/cart.png",
+      "selectedIconPath": "/statics/icon/cart-active.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "/statics/icon/my.png",
+      "selectedIconPath": "/statics/icon/my-active.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+
+  
+  
+}

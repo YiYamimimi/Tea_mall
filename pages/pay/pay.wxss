@@ -1,0 +1,90 @@
+page {
+    padding-bottom: 90rpx;
+  }
+  .cart_content .cart_title {
+    padding-left: 70rpx;
+    padding-bottom: 20rpx;
+    padding-top: 20rpx;
+    color: var(--themeColor);
+    font-size: 36rpx;
+    border-top: thick double #237e6265;
+    border-bottom: 1px solid rgb(202, 200, 200);
+  }
+  .cart_content  .cart_main .cart_item {
+    display: flex;
+    padding: 10rpx;
+    border-bottom: 1px solid #ccc;
+    height: 220rpx;
+  }
+  .cart_content  .cart_main .cart_item .cart_img_wrap {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .cart_content  .cart_main .cart_item .cart_img_wrap image{
+    width: 99%;
+  }
+  .cart_content  .cart_main .cart_item .cart_info_wrap {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .cart_content  .cart_main .cart_item .cart_info_wrap .goods_name {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: #666;
+  }
+  .cart_content  .cart_main .cart_item .cart_info_wrap .goods_price_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart_content  .cart_main .cart_item .cart_info_wrap .goods_price_wrap .goods_price {
+    color: var(--themeColor);
+    font-size: 34rpx;
+  }
+  .cart_content  .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num_tool {
+    display: flex;
+  }total_price
+  .cart_content  .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num_tool  .goods_num {
+    width: 50rpx;
+    height: 50rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer_tool {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90rpx;
+    background-color: #fff;
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+  .footer_tool .total_price_wrap {
+    flex: 4;
+    padding-left: 15rpx;
+  }
+  .footer_tool .total_price_wrap .total_price .total_price_text {
+    color: var(--themeColor);
+    font-size: 34rpx;
+    font-weight: 600;
+  }
+  .footer_tool .order_pay_wrap {
+    flex: 3;
+    background: linear-gradient(to right, #BAD296, #009E9D);
+    font-size: 32rpx;
+    font-weight: 600;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

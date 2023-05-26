@@ -1,0 +1,65 @@
+<view>
+    <button style="border-radius:10% ;font-size:14px" ><navigator url="/pages/addressList/addressList">+添加收货地址</navigator></button>
+</view>
+
+<navigator url="/pages/addressList/addressList" class="user_info_row" wx:if="{{statu!='待发货'}}">
+  <view class="user_info" wx:for="{{addressList}}" wx:if="{{item.statu==true}}" wx:key="index">
+    <view>收货人 ：{{item.name}}</view>
+    <view>收货地址：{{item.city}}{{item.address}}</view>
+  <view class="user_phone">电话：{{item.tel}}</view>
+</view>
+</navigator>
+
+<view class="user_info_row" wx:if="{{statu=='待发货'}}">
+  <view class="user_info" wx:for="{{address}}" wx:key="index">
+    <view>{{item.name}}</view>
+    <view>{{item.city}}{{item.address}}</view>
+  </view>
+  <view class="user_phone">{{item.tel}}</view>
+</view>
+
+<!--购物车的内容-->
+<view class="cart_content">
+  <view class="cart_title">订单</view>
+  <view class="cart_main">
+    <!--当cart数组不为0显示 -->
+
+    <view class="cart_item" wx:for="{{payList}}" wx:key="index">
+
+      <!--商品图片-->
+      <navigator class="cart_img_wrap">
+        <image src="{{item.goods.url}}" style="height: 100%; width: 70%;"  />
+      </navigator>
+      <!--商品信息-->
+      <view class="cart_info_wrap">
+        <view class="goods_name">
+          {{item.goods.goodsName}}
+        </view>
+        <view class="goods_price_wrap">
+          <view class="goods_price">￥{{item.goods.money}}</view>
+          <view class="cart_num_tool">
+            <view class="goods_num">X {{item.shu}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--底部工具栏-->
+<view class="footer_tool" wx:if="{{statu!='待发货'}}">
+
+  <!--总价格-->
+  <view class="total_price_wrap">
+    <view class="total_price">
+      合计
+      <text class="total_price_text">￥{{sum}}</text>
+    </view>
+    <view class="total_price">
+      包含运费
+    </view>
+
+  </view>
+  <!--结算-->
+  <view class="order_pay_wrap" bindtap="payshop">支付({{num}})</view>
+</view>

@@ -1,0 +1,193 @@
+/* pages/separate/separate.wxss */
+/* pages/cart/index.wxss */
+.wraper{
+  /* 让内容滚动，且不会被结算栏挡住 */
+ display: flex;
+ flex-direction: column;
+}
+/* 左侧导航栏图片 */
+.shangcha{
+  width: 100%;
+}
+
+page {
+  font-family: "微软雅黑";
+  background-color: white;
+}
+
+/* 头部 */
+.classify-head {
+  width: 100%;
+  height: 100rpx;
+  background: white;
+  border-top:1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  display: flex;
+  justify-content: center;
+}
+.classify-search {
+  width: 95%; 
+  height:80rpx;
+  background: white; 
+  border-radius: 100rpx;
+  border: 1rpx solid #ac7f2f;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+.icon-sou {
+  width: 30rpx;
+  height: 30rpx;
+  align-self: center;
+  margin-right: 10rpx;
+}
+.sou-con {
+  font-size:15px;
+  align-self: center;
+  color: #808080;
+}
+/**/
+.question-mark {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  left: 45rpx;
+  top: 30rpx;
+}
+
+.tui-fixed-x {
+  /* margin-left: 130px; */
+  position: fixed;
+  top: 89rpx;
+  left: 0;
+}
+
+.tui-fixed-left {
+  width: 24%;
+  height: 100%;
+  /* border-right: 1px solid #dfdfdf; */
+  position: fixed;
+  background-color: #f5f5f5;
+  top: 89rpx;
+  left: 0;
+  margin-top: 15rpx;
+}
+
+.tui-list-head {
+  
+  height: 60rpx;
+  width: 43%;
+  text-align: center;
+  border-radius: 20rpx;
+  line-height: 60rpx;
+  background-color:#DFE5A7;
+}
+
+.tui-city-scroll {
+  width: 100%;
+}
+
+.menu-item {
+  font-size: 26rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 180rpx;
+  /* background-color: #fff; */
+  display: block;
+  /* border-bottom: 1px dashed #dfdfdf; */
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.menu-active {
+ 
+  background-color: #fff;
+  color:rgb(7, 145, 104);
+  border-left: 10rpx solid currentColor;
+}
+
+.content {
+  width: 76%;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+
+  /* 让内容滚动且不会被结算栏挡住 */
+  padding-bottom: 100rpx;
+  height: 100%;
+  position: fixed;
+  top: 89rpx;
+  right: 0;
+}
+
+.tui-city-scroll-y {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: white; 
+  margin-top: 45rpx;
+}
+.pro-item
+{
+  padding-bottom: 7%;
+}
+.tui-list-head {
+  /* height: 65rpx; */
+  /* line-height: 65rpx; */
+  font-size: 40rpx;
+  font-weight: 549;
+}
+
+.tui-list-li {
+  /* background-color: rgb(223, 240, 235); */
+  /* height: 400px; */
+  border-bottom: 1px solid #dfdfdf;
+  overflow: hidden;
+  font-size: 50rpx;
+  box-sizing: border-box;
+  padding: 20rpx 0 0 0;
+  justify-content: space-around;
+}
+
+.goods-box {
+  width: 250rpx;
+  /* height: 100rpx;*/
+  /* background: #c00;  */
+  /* overflow: hidden; */
+  /* margin-right: 10rpx; */
+  box-sizing: border-box;
+  border: 3rpx solid #efefefef;
+  border-radius: 10%;
+  /* margin-bottom: 10rpx; */
+  float: left;
+}
+
+.tui-list-li .goods-box:nth-child(3n) {
+  margin-right: 0rpx;
+  /* background-color: blueviolet; */
+}
+
+.goodsImg {
+  border-radius:14%;
+  display: block;
+  width: 220rpx;
+  height: 220rpx;
+  margin: 0 auto;
+  margin-bottom: 15rpx;
+}
+
+.goodsName {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  font-size: 35rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  margin-bottom: 20rpx;
+  font-weight: 700;
+}

@@ -1,0 +1,30 @@
+<tab tabList="{{tabList}}" curr="{{curr}}" bind:tapwhere="_where"></tab>
+
+<view class="order" wx:for="{{orderList}}"  wx:for-index="idx" wx:for-item="item1" wx:key="idx" >
+	<view class="content_">
+		<navigator url="/pages/pay/pay?orderid={{item1.orderid}}" class="title">
+			<view>订单编号：{{item1.orderid}}</view>
+			<text>{{item1.statu}}</text>
+		</navigator>
+
+		<navigator url="/pages/goods_list/goods_list?id={{item2.goods.id}}&url={{item2.goods.url}}&goodsName={{item2.goods.goodsName}}&money={{item2.goods.money}}" class="card" wx:for="{{item1.goods}}"   wx:for-item="item2" wx:key="item2.goods.goods_id">
+			<view class="card-img">
+				<image src="{{item2.goods.url}}"></image>
+			</view>
+			<view class="card-text">
+				<view class="card-text_">
+					<text>{{item2.goods.goodsName}}</text>
+					<view>
+						<view>￥{{item2.goods.money}}</view>
+						<text>x{{item2.shu}}</text>
+					</view>
+				</view>
+			</view>
+		</navigator>
+	</view>
+  
+	<view class="bottom-title" >
+		共{{item1.goods[0].num}}件商品 实付：￥{{item1.goods[0].sum}}
+	</view>
+    
+</view>

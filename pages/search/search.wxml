@@ -1,0 +1,39 @@
+<!--pages/search/search.wxml-->
+
+<view class="top">
+  <view class="topsearch">
+    <view class="frame">
+      <input value="{{shoopingtext}}" bindinput="shoppinginput"></input>
+    </view>
+    <text class="text" bindtap="search">搜索</text>
+  </view>
+</view>
+<view class="history" wx:if="{{history}}">
+  <view class="history_title">
+    <text>历史搜索</text>
+    <!-- <image src="/statics/images/aboutUs.png" mode="widthFix" style="width:5%;" bindtap="cleanhistory"></image> -->
+  </view>
+  <view class="history_text">
+    <text wx:for="{{newArray}}" wx:key="key" data-text="{{item}}" bindtap="textfz">{{item}}</text>
+  </view>
+</view>
+<view class="none" wx:if="{{noneview}}">
+  <image src="/images/null.png" mode="widthFix" style="width:20%"></image>
+  <text>抱歉，没有相关商品</text>
+</view>
+<view class='swiper_con' wx:if="{{shoppinglist}}">
+  <navigator class='swiper_con_view' wx:for="{{shoopingarray}}" wx:key="id" wx:if='{{item.status=="1"?true:false}}'url="/pages/goods_list/goods_list?id={{item.id}}&url={{item.url}}&goodsName={{item.goodsName}}"
+        wx:key="unique">
+    <image src="{{item.url}}" mode="widthFix" style="width:100%" data-status="{{item.status}}"></image>
+    <view style="width:90%;margin:5%;">
+      <text style="font-size:24rpx">{{item.goodsName}}</text>
+      <view class="swiper_con_view_view">
+        <view style="width:80%;">
+          <text style="font-size:24rpx;color:red;">￥{{item.money}}</text>
+          <text style="font-size:18rpx;color:#B8B8B8;margin-left:5%;">已售{{item.sold}}</text>
+        </view>
+        <image src="/statics/icon/cart-active.png" mode="widthFix" style="width:15%;position:relative;left:8%;"></image>
+      </view>
+    </view>
+  </navigator>
+</view>

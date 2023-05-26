@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tab":"/components/Tabs/Tabs"
+  },
+  "navigationBarTitleText": "意见反馈"
+}

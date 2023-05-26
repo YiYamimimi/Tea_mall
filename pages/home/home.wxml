@@ -1,0 +1,145 @@
+<!-- navbar头部 -->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<!-- 用来隔开导航栏和轮播图，避免重叠 -->
+<view style='margin-top: {{height+1}}px;'>
+
+</view>
+
+<!-- 轮播图 -->
+<swiper indicator-dots circular autoplay  indicator-color="white" style='height:{{Hei1}}' class="first"> 
+  <swiper-item>
+    <image class="bigImage" src="https://pic1.imgdb.cn/item/6359f02c16f2c2beb165e4ba.jpg" mode="widthFix" bindload='imgH1'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="bigImage" src="https://pic1.imgdb.cn/item/6359f02c16f2c2beb165e4b7.jpg" mode="widthFix" bindload='imgH1'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="bigImage" src="https://pic1.imgdb.cn/item/6359f02c16f2c2beb165e4bf.jpg" mode="widthFix" bindload='imgH1'></image>
+  </swiper-item>
+</swiper>
+
+<!-- 茶叶产地、关于我们 -->
+<view class="home_icon1">
+  <navigator url="/pages/productFrom/productFrom" >
+    <image src="https://pic1.imgdb.cn/item/635c9b2b16f2c2beb13be89b.png" class="IconImage1" mode="widthFix"></image>    
+  </navigator>
+  <view>
+    <image src="/statics/images/smallSplit.png" class="smallSplit"></image>
+  </view> 
+  <navigator url="/pages/aboutus/aboutus" > 
+    <image src="https://pic1.imgdb.cn/item/635c9b2b16f2c2beb13be891.png" class="IconImage1" mode="widthFix"></image>    
+  </navigator>
+</view>
+
+<!-- 分割线 -->
+<view>
+  <image src="https://pic1.imgdb.cn/item/635a3a1916f2c2beb1c9c5e2.png" class="home_split" mode="widthFix"></image>
+</view>
+
+<!-- 韶关红山镇 -->
+ <view class="home_icon2">
+  <!-- 地址前面要加斜杠！！！ --> 
+    <image src="https://pic1.imgdb.cn/item/635c9b6b16f2c2beb13c2980.png" class="IconImage2" mode="widthFix"></image> 
+</view>
+<image class="midiumImage" src="https://pic1.imgdb.cn/item/635a37a116f2c2beb1c5cefd.png" mode="widthFix"></image>
+<image class="midiumImage" src="https://pic1.imgdb.cn/item/6359f02316f2c2beb165daa7.jpg" mode="widthFix"></image>
+<!-- <view class="home_icon2">
+    <text class='mydiv1 introduceText1'>手执香茗，心素如简，
+      </text>
+      <text class='mydiv1 introduceText1'>人淡如茶，却留香阵阵。
+      </text>
+      <text class='mydiv1 introduceText1'>品一杯茶，许你一世繁华。
+      </text>
+      <text class='mydiv1 introduceText1'>捻一缕茶香，守半盏时光。
+      </text>
+      <text class='mydiv1 introduceText1'>生命本如禅，禅茶静中饮。     
+      </text>
+</view> -->
+<image class="textImage" src="https://pic1.imgdb.cn/item/635bf0dc16f2c2beb1995895.png" mode="widthFix"></image>
+<!-- <view class="text_right">
+  <i class='myfont_Light introduceText2'>——— 唐•司空图《二十四诗品》
+  
+  
+  </i>
+</view> -->
+
+
+<image class="midiumImage" src="https://pic1.imgdb.cn/item/635c99cc16f2c2beb13a4259.png" mode="widthFix"></image>
+
+<!-- 茶叶介绍 -->
+ <view class="home_icon2">
+    <image src="https://pic1.imgdb.cn/item/635a3a1916f2c2beb1c9c5f0.png" class="IconImage2" mode="widthFix"></image>     
+</view>
+<view class="text_right">
+  <image src="https://pic1.imgdb.cn/item/635befe116f2c2beb197c3c7.png" mode="widthFix"></image>
+  <!-- <text class='mydiv1 introduceText2'>/源于自然，归于本真/
+  </text> -->
+</view>
+<image class="midiumImage2" src="https://pic1.imgdb.cn/item/6359f02916f2c2beb165e1a9.png" mode="widthFix"></image>
+<!-- <view class="home_icon2">
+    <text class='mydiv1 introduceText4'>它们带有兰花的独特清香，
+      </text>
+      <text class='mydiv1 introduceText4'>曾为明清朝中贡品，
+      </text>
+      <text class='mydiv1 introduceText4'>芽头肥硕，茶亳满披，
+      </text>
+      <text class='mydiv1 introduceText4'>滋润甘醇，沁人心脾，
+      </text>
+      <text class='mydiv1 introduceText4'> 茗香阵阵入人心。    
+      </text>
+</view> -->
+<image class="textImage2" src="https://pic1.imgdb.cn/item/635befe116f2c2beb197c3bc.png" mode="widthFix"></image>
+<image class="midiumImage2" src="https://pic1.imgdb.cn/item/635c966316f2c2beb135bddb.png" mode="widthFix"></image>
+
+<!-- 茶文化 -->
+<view class="home_icon2">
+    <image src="https://pic1.imgdb.cn/item/635a3a1916f2c2beb1c9c5e9.png" class="IconImage3" mode="widthFix"></image>     
+</view>
+<view class="text_right">
+  <!-- <text class='mydiv1 introduceText2'>/若茶能语，饮者自惭/
+  </text> -->
+  <image src="https://pic1.imgdb.cn/item/635c856816f2c2beb122e708.png" mode="widthFix"></image>
+</view>
+<image class="bigImage1" src="https://pic1.imgdb.cn/item/635a31cb16f2c2beb1bc6c16.png" mode="widthFix"></image>
+<text class='mydiv1 introduceText5'>为一杯茶/感寻深处/
+</text>
+<!-- <view class="home_icon2">
+    <text class='mydiv1 introduceText1'>以最简单的冲泡方式
+      </text>
+    <text class='mydiv1 introduceText1'>赋予您极简的喝茶之道
+      </text>
+      <text class='mydiv1 introduceText1'>只为让您的生活更加简单
+      </text>
+</view> -->
+<image class="textImage3" src="https://pic1.imgdb.cn/item/635befe116f2c2beb197c3c0.png" mode="widthFix"></image>
+<image class="midiumImage1" src="https://pic1.imgdb.cn/item/635c9bed16f2c2beb13cba18.png" mode="widthFix"></image>
+
+<view class="text_right">
+  <text class='mydiv1 introduceText2'>千里千寻/品味自然
+  </text>
+</view>
+
+
+<!-- 好茶分享 火热促销 -->
+<image src="https://pic1.imgdb.cn/item/635c99f616f2c2beb13abf28.png" class="IconImage4" mode="widthFix"></image>
+
+<!-- 轮播图 -->
+<swiper indicator-dots="black" circular style='height:{{Hei}}' autoplay> 
+  <swiper-item>
+    <image class="bigImage1" src="https://pic1.imgdb.cn/item/6359f02316f2c2beb165dabf.jpg" mode="widthFix" bindload='imgH'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="bigImage1" src="https://pic1.imgdb.cn/item/6359f02316f2c2beb165dace.jpg" mode="widthFix" bindload='imgH'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="bigImage1" src="https://pic1.imgdb.cn/item/6359f02316f2c2beb165daa2.jpg" mode="widthFix" bindload='imgH'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="bigImage1" src="https://pic1.imgdb.cn/item/6359f02316f2c2beb165daab.jpg" mode="widthFix" bindload='imgH'></image>
+  </swiper-item>
+</swiper>
+
+<image class="midiumImage3" src="https://pic1.imgdb.cn/item/635c996716f2c2beb139bb15.png" mode="widthFix"></image>
+
+<image class="Tobottom" src="https://pic1.imgdb.cn/item/6359f02916f2c2beb165e1b2.jpg" mode="widthFix"></image>
+

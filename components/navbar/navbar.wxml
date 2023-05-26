@@ -1,0 +1,14 @@
+<view class="nav-wrap nav-bgc-class" style='height: {{statusBarHeight + navBarHeight}}px;'>
+  <!-- 插入背景图片 -->
+  <view class="root">
+    <image class='background-image' src='https://pic1.imgdb.cn/item/635c9a6716f2c2beb13b3260.jpg' mode="widthFix"></image>
+    
+  </view>
+  <!--  左上角的返回按钮 其中wx:if='{{navbarData.showCapsule}}' 是控制左上角按钮的显示隐藏，1为显示，0为隐藏 -->
+    <!-- <view class='nav-capsule content' style='margin-top: {{statusBarHeight}}px; height: {{navBarHeight}}px;' wx:if='{{navbarData.showCapsule}}' bindtap='_navback'>
+      <image class='back-pre' src='/statics/icon/back.png' mode='widthFix'></image>
+    </view> -->
+    
+    <!--  中间的标题 -->
+  <!-- <view class='nav-title nav-title-class' style='margin-top: {{statusBarHeight}}px; height: {{navBarHeight}}px;line-height: {{navBarHeight}}px;'>{{navbarData.title}}</view> -->
+</view>

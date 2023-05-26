@@ -1,0 +1,27 @@
+<tab tabList="{{tabs}}" curr="{{curr}}" ></tab>
+<view class="fb_main">
+        <view class="fb_title"></view>
+        <view class="fb_tips">
+            <text >功能建议</text>
+            <text >购买遇到问题</text>
+            <text >性能问题</text>
+            <text >其他</text>
+        </view>
+        <view class="fb_content">
+            <textarea value="{{textValue}}" bindinput = "handleTextInput" placeholder="请描述一下问题"></textarea>
+            <view class="fb_tool">
+                <button bindtap = "handleimg" >+</button>
+                <view class="up_img_item" wx:for="{{chooseimg}}"
+                wx:key="*this" bindtap = "handleremoveimg" data-index="{{index}}"
+                >
+                <!--数组为简单数组的时候，使用 *this 的值作为wx:key 的值即可-->
+                    <image src="{{item}}" style="width: 100rpx; height: 100rpx;"  mode="widthFix" />
+                </view>
+            </view>
+        </view>
+        <view class="form_btn_wrap"> 
+            <button  bindtap="handlefrom" class="publish">
+                提交
+            </button>
+        </view>
+    </view>

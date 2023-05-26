@@ -1,0 +1,10 @@
+<view class="top">
+    <view wx:for="{{tabList}}" wx:key="index" class="title {{index == curr ? 'active':''}}" bindtap="tapwhere" data-index="{{index}}">{{item}}</view>
+</view>
+
+<navigator class="goods" wx:for="{{GoodsList}}" wx:key="cat_id" url="/pages/goods_list/goods_list?id={{item.id}}&url={{item.url}}&goodsName={{item.goodsName}}&money={{item.money}}">
+      <view class="img">  
+        <image class="border" src="{{item.url}}" mode="widthFix"/>
+      </view>
+      <view class="context">{{item.goodsName}}<view class="price">￥{{item.money}}</view></view>
+</navigator>

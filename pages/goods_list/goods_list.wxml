@@ -1,0 +1,36 @@
+<!--pages/goods_list/goods_list.wxml-->
+<view>
+  <image class="bigImage" style="width:100%" mode="widthFix" src="{{goodsObj.url}}"></image>
+</view>
+<!--中间 -->
+<view class="divLine"></view>
+<view class="box">
+  <view class="box1">名字：{{goodsObj.goodsName}}</view>
+  <view >价格：{{goodsObj.money}}</view>
+</view>
+
+<!--底部浮动 start-->
+<view class="foot-nav mt15">
+
+  <view class="flex con gridXt tc">
+    <view class="fast-links mr15 flex f12">
+      <navigator class="sub gridYr" url="/pages/home/home" open-type="switchTab" >
+        <image src="/statics/icon/home.png" mode="widthFix" style="width:30%;position:relative;left:5%;"></image> 
+      </navigator>
+
+      <navigator class="sub gridYr" url="/pages/shop/shop" open-type="switchTab" >
+        <image src="/statics/icon/cart.png"mode="widthFix" style="width:30%;position:relative;left:0%;"></image>
+      </navigator>
+    </view>
+
+    <view class="add-cart sub f16">
+      <button class="add-cart-btn" bindtap='addShop'>加入购物车</button>
+    </view>
+
+    <view class="add-cart sub f16">
+      <button class="add-cart-btn" bindtap='shoucang'>{{shoucang_text}}</button>
+    </view>
+
+  </view>
+</view>
+

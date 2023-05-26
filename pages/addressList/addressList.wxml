@@ -1,0 +1,28 @@
+<radio-group bindchange="radioChange">
+<view class='list-item' wx:for="{{addressList}}" wx:key="index">
+<view class='item-head'>
+    <text>{{item.label}}</text>
+    <text class='right'>{{item.tel}}</text>
+</view>
+
+<view class='item-desc'>
+   <text>{{item.city}}{{item.address}}</text>
+</view>
+
+<view class='item-edit'>
+   <view class='left'>
+        <radio value="{{index}}" checked="{{item.statu}}">
+        <text class='ctr'>选中该地址</text>
+        </radio>
+  </view>
+  <view class='right'>
+      <text bindtap="navigateToEdit" data-id="1">编辑</text> -
+      <text bindtap="delAddr" data-id="1">删除</text>
+  </view>
+</view>
+</view>
+</radio-group>
+<!--按钮-->
+<navigator url="/pages/address/address">
+<button style="position: fixed; bottom: 0; width: 100%; background-color: #d4e7b7; color: black; ">添加新地址</button>
+</navigator>

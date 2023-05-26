@@ -1,0 +1,89 @@
+<view class="view_contain" wx:if="{{userInfo.length!=0}}">
+  <!-- 第一部分 -->
+  <view class="view_1 root" >
+    <image class='background-image' src='https://pic1.imgdb.cn/item/635a0a0116f2c2beb18405ad.png' mode="scaleToFill"></image>
+    <view class="view_image_text content">
+      <image class="image_radius" src="{{userInfo.avatarUrl}}" />
+      <text>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <!-- 第二部分 -->
+  <view class="view_2">
+    <navigator url="/pages/collect/collect?curr=0" class="view_tupianwenzi">
+        <text style="font-size: 35rpx;  color: #CD853F; text-align: center;">{{shoucangList.length}}</text>
+      <text class="text_saoyisao">收藏的商品</text>
+    </navigator>
+    <navigator url="/pages/collect/collect?curr=3" class="view_tupianwenzi">
+        <text style="font-size: 35rpx; color: #CD853F; text-align: center;">{{hostryList.length}}</text>
+      <text class="text_saoyisao">我的足迹</text>
+    </navigator>
+  </view>
+
+  <view class="line"></view>
+  
+  <view class="view_2 myorders">
+    <navigator url="/pages/order/order?curr=0" class="view_tupianwenzi">
+      <image src="/statics/icon/allDingDan.png" class="item-image"></image>
+      <text class="text_saoyisao">全部订单</text>
+    </navigator>
+    <navigator url="/pages/order/order?curr=1" class="view_tupianwenzi">
+      <image src="/statics/icon/daizhifu.png" class="item-image"></image>
+      <text class="text_saoyisao">待付款</text>
+    </navigator>
+    <navigator url="/pages/order/order?curr=2" class="view_tupianwenzi">
+      <image src="/statics/icon/daishouhuo.png" class="item-image"></image>
+        <text class="text_saoyisao">待收货</text>
+    </navigator>
+    <navigator url="/pages/order/order?curr=3" class="view_tupianwenzi">
+      <image src="/statics/icon/tuikuan.png" class="item-image"></image>
+      <text class="text_saoyisao">退款/退货</text>
+    </navigator>
+  </view>
+
+  <!-- 第三部分 -->
+  <view class="view_3">
+    <view class="list-item list-item2">
+    <!-- 产生100rpx的距离让文本对齐白条 --> 
+        <image class="item-image" src=""></image>
+        <navigator url="/pages/addressList/addressList" class="item_text_image">
+          <image class="icon_image" src="/statics/icon/dizhi.png" class="icon_image"></image>        
+          <text class="item-text">收货地址管理<text style="position: relative; left: 385rpx; bottom: 5rpx;">></text>
+          </text>
+        </navigator>
+      
+      <view class="line"></view>
+      <image class="item-image" src=""></image>
+      <navigator url="/pages/feedback/feedback" class="item_text_image">
+        <image class="icon_image" src="/statics/icon/yijian.png"></image>
+        <text class="item-text">意见反馈<text style="position: relative; left: 450rpx; bottom: 5rpx;">></text>
+        </text>
+      </navigator>
+
+      <view class="line"></view>
+      <image class="item-image" src=""></image>
+      <navigator url="/pages/aboutus/aboutus" class="item_text_image">
+        <image class="icon_image" src="/statics/icon/guanyuwomen.png"></image>
+        <text class="item-text">关于我们<text style="position: relative; left: 450rpx; bottom: 5rpx;">></text>
+        </text>
+      </navigator>
+
+      <view class="line"></view>
+      <image class="item-image" src=""></image>
+      <view class="item_text_image">
+        <image class="icon_image" src="/statics/icon/fenxiang.png"></image>
+        <text class="item-text">分享<text style="position: relative; left: 540rpx; bottom: 5rpx;">></text></text>
+        <button open-type="share" style="position: absolute;bottom: 0; width: 100%;background-color: transparent;border:none"></button>
+      </view>
+    </view>
+
+
+    
+    </view>
+  </view>
+
+
+  <view  wx:else>
+  <button class="loding" bindtap="getUserProfile">登陆</button>
+  </view>
+  
+
