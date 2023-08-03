@@ -22,9 +22,11 @@
     "pages/separate/separate"
   ],
   "window": {
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#FDFBEF",
+   
+     "navigationBarBackgroundColor": "#FDFBEF",
     "navigationBarTextStyle": "black"
+    
+   
   },
   "tabBar": {
     "backgroundColor": "#efefefef",

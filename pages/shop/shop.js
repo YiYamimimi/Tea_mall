@@ -277,6 +277,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    //从本地缓存中同步获取指定 key 的内容。var value = wx.getStorageSync('key')
     let carts = wx.getStorageSync('carts') || [];
     let arr = [];
     console.log("chuang", carts);

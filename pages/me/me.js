@@ -30,7 +30,7 @@ Page({
 //用户授权后获取用户信息
 getUserProfile: function (e) {
 console.log(e);
-wx.getUserProfile({
+wx.getUserProfile({//使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认
   desc:'用于登陆',
   success: (res) => {
     console.log(res);
